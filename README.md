@@ -49,7 +49,6 @@ GamificationOnX/
 ├── frontend/
 │   ├── index.html                 # Demo UI for gamification dashboard
 │   ├── leaderboard.js             # Leaderboard visualization logic
-│   ├── styles.css                 # Styling for frontend
 │   └── achievements.html          # User badges and progress
 ├── assets/
 │   ├── badges/                    # badge images
