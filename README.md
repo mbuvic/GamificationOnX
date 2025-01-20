@@ -1,17 +1,13 @@
 # GamificationOnX
-GamificationOnX introduces a feature-rich, gamified ecosystem to enhance user engagement on X (formerly Twitter). This project demonstrates a proof of concept for integrating gamification into the platform, including leaderboards, challenges, rewards, and social achievements.
 
-
-# GamificationOnX
-
-## 🎯 **Overview**
+##  **Overview**
 **GamificationOnX** is a project aimed at transforming user engagement on X (formerly Twitter) by introducing gamified features. The platform enables users to earn points, unlock badges, compete on leaderboards, and participate in challenges, creating an interactive and rewarding social experience.
 
 This repository showcases a proof of concept, including backend logic, frontend visualization, and integration ideas with X's API.
 
 ---
 
-## 🚀 **Features**
+##  **Features**
 ### 1. **Point System**
    - Earn points for specific actions:
      - **1 Point**: Like a tweet.
@@ -43,7 +39,7 @@ This repository showcases a proof of concept, including backend logic, frontend 
 
 ---
 
-## 📂 **Project Structure**
+## **Project Structure**
 ```plaintext
 GamificationOnX/
 ├── backend/
