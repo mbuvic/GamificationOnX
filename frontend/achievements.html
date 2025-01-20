@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1c1e26, #313848);
+      color: #ffffff;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .title {
+      text-align: center;
+      font-size: 2.5em;
+      margin-top: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 1.2em;
+      margin: 10px 0 30px;
+      color: #aaaaaa;
+    }
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .achievement-card {
+      background: #2c2f3f;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .achievement-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+    .achievement-icon {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #f9a825;
+    }
+    .achievement-title {
+      font-size: 1.5em;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .achievement-description {
+      font-size: 0.9em;
+      color: #cccccc;
+    }
+    .progress-bar {
+      margin-top: 15px;
+      height: 10px;
+      background: #444857;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .progress {
+      height: 100%;
+      background: #f9a825;
+      width: 0;
+      animation: progressAnimation 1.5s ease-in-out forwards;
+    }
+    @keyframes progressAnimation {
+      from {
+        width: 0;
+      }
+      to {
+        width: var(--progress-width);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Achievements</h1>
+    <p class="subtitle">Unlock milestones and celebrate your progress!</p>
+    
+    <div class="achievements-grid">
+      <!-- Example Achievement Card -->
+      <div class="achievement-card">
+        <div class="achievement-icon">🏆</div>
+        <div class="achievement-title">Engagement Guru</div>
+        <div class="achievement-description">
+          Earned for driving over 500 interactions in one week!
+        </div>
+        <div class="progress-bar">
+          <div class="progress" style="--progress-width: 100%;"></div>
+        </div>
+      </div>
+
+      <div class="achievement-card">
+        <div class="achievement-icon">🔥</div>
+        <div class="achievement-title">Streak Master</div>
+        <div class="achievement-description">
+          Maintained a 7-day activity streak. Keep going!
+        </div>
+        <div class="progress-bar">
+          <div class="progress" style="--progress-width: 70%;"></div>
+        </div>
+      </div>
+
+      <div class="achievement-card">
+        <div class="achievement-icon">🌟</div>
+        <div class="achievement-title">Content Creator</div>
+        <div class="achievement-description">
+          Published 10 high-quality posts that got 1,000+ views.
+        </div>
+        <div class="progress-bar">
+          <div class="progress" style="--progress-width: 85%;"></div>
+        </div>
+      </div>
+
+      <div class="achievement-card">
+        <div class="achievement-icon">💬</div>
+        <div class="achievement-title">Top Contributor</div>
+        <div class="achievement-description">
+          Contributed 100+ comments in community discussions.
+        </div>
+        <div class="progress-bar">
+          <div class="progress" style="--progress-width: 60%;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
